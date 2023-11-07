@@ -1,0 +1,20 @@
+.custom-cursor {
+     width: 0;
+     height: 0;
+     border-left: 10px solid transparent;
+     /* Left triangle edge for the V */
+     border-right: 10px solid transparent;
+     /* Right triangle edge for the V */
+     border-bottom: 20px solid;
+     /* V-shape, change color as desired */
+     position: fixed;
+     pointer-events: none;
+     /* transform: translate(-50%, -50%); */
+     transform: rotate(-30deg);
+     transition: transform 0.2s ease;
+}
+
+.name-under-cursor {
+     margin-top: 15px;
+     position: fixed;
+}
