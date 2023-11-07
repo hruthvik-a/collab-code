@@ -10,7 +10,7 @@ const server = fastify();
 server.register(routes).then(() => {
   server.register(fastifyCors, {
     // Set your CORS options here
-    origin: "*",
+    origin: "https://collab-code-57t1.vercel.app",
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // Set to true if you're dealing with cookies or authentication
